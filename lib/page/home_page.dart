@@ -1,3 +1,4 @@
+import 'package:fluter_ux_ui/widget/circle_container.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,17 +10,11 @@ class HomePage extends StatelessWidget {
         title: Text('My flutter app'),
       ),
       body: Center(
-        child: Text(
-          'Hello Devs\nAPP',
-          textAlign: TextAlign.center, 
-          style: TextStyle(
-            color: Colors.green, 
-            letterSpacing: 1, 
-            shadows: [
-              Shadow(color: Colors.black, blurRadius: 3, offset: Offset(1, 1))
-            ], 
-            fontSize: 45, 
-            fontWeight: FontWeight.w300)),
+        child: CircleContainer(
+          child: Text('Hola'),
+          width: 100,
+          height:100,
+        )
       ),
     );
   }
